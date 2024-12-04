@@ -1,8 +1,8 @@
 Anderson University
 ===================
 
-CPSC 2020 Fundamentals of Computational Thinking and Problem Solving
---------------------------------------------------------------------
+CPSC 2030 Object Oriented Analysis and Design
+---------------------------------------------
 
 Fall 2024
 
@@ -24,37 +24,28 @@ Office hours
 Course Catalog Description
 --------------------------
 
-An introduction to concepts in the field of computer science, the skills of computational thinking, and the craft of computer programming. Topics include a survey of problem-solving and algorithm development, data types and variables, collections, control-of-flow structures, methods and parameters, file processing, and objects. Emphasis is placed on effective testing and debugging, and an introduction to the command line environment is presented.
+Builds upon the topics covered in Fundamentals of Computational Thinking and Programming with an emphasis on writing classes and a focus on object-oriented programming. Topics include the theory and application of encapsulation, abstraction, inheritance, and polymorphism. An introduction to version control is presented.
 
 Required Resources
 ------------------
 
-- [Python for Everybody](https://www.py4e.com/) (free online resource)
+- None
+
+Recommended Resources
+---------------------
+
+- Steven F. Lott and Dusty Phillips, Python Object-Oriented Programming, 4th ed., 2021. ISBN: 978-
+1801077262, 693 pgs.
+- Matt Weisfeld, The Object-Oriented Thought Process, 5th ed., 2019. ISBN: 978-0135181966, 223
+pgs.
 
 Course Objectives
 -----------------
 
 Upon completion of this course, students will be able to:
 
-- Apply computational thinking to solve problems
-- Create simple Python programs
-- Design suitable algorithms for basic computational tasks
-- Describe concepts such as data types, variables, and control flow
-- Use the command line to interact with a computer system
-- Test and debug software effectively
-
-Liberal Arts Quantitative Reasoning Objectives
-----------------------------------------------
-
-Upon completion of this course, students will be able to:
-
-1. Interpret information that has been presented in mathematical form (e.g. with functions, equations, graphs, diagrams, tables, words, geometric figures).
-2. Represent information/data in mathematical form as appropriate (e.g. with functions, equations, graphs, diagrams, tables, words, geometric figures).
-3. Demonstrate skill in accurately solving problems using mathematical procedures.
-4. Analyze mathematical arguments, determining whether stated conclusions can be inferred using deductive reasoning.
-5. Communicate which assumptions have been made in the solution process, citing the limitations of the process where applicable.
-6. Analyze mathematical results in order to determine the reasonableness of the solution.
-7. Clearly explain the representation, solution, and interpretation of a mathematics problem.
+- Use classes to instantiate custom objects
+- Apply encapsulation, abstraction, inheritance, and polymorphism to solve computational problems
 
 Course Overview
 ---------------
@@ -71,7 +62,7 @@ Regular quizzes will be given covering the lecture material. Students will have 
 
 ### Exams
 
-A total of 3 exams will be taken in this course. All exams are cumulative with a focus on more recent material.
+A total of 2 exams will be taken in this course. All exams are cumulative with a focus on more recent material.
 
 Grading Scale
 -------------
