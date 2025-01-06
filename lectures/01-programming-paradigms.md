@@ -1,5 +1,5 @@
-CPSC 4430 Software Engineering
-==============================
+CPSC 2030 Object Oriented Analysis and Design
+=============================================
 
 About Me
 --------
@@ -114,7 +114,7 @@ Paradigms
   - Assignment and Iteration
   - C, Fortran, and other OO Languages
 - Object-Oriented 
-  - Uses objects to ecapsulate data and behavior
+  - Uses objects to encapsulate data and behavior
   - C#, C++, Java, Python, Javascript
 - Declarative 
   - SQL, HTML
