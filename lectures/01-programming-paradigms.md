@@ -101,7 +101,7 @@ Execution
 - Instructions are ultimately given to the CPU (and to other hardware) in machine language–which is binary (ones and zeros)
 - Assembly languages provide “human-readable” low-level language for hardware instructions
 
-Interpeter
+Interpreter
 ----------
 
 - Intermediary program executes code to produce output

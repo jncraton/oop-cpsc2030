@@ -5,7 +5,6 @@ Craton
 Docstrings
 Fortran
 Homebrew
-Interpeter
 Javascript
 KACE
 Neumann
@@ -19,6 +18,7 @@ VirtualBox
 automata
 docstrings
 fidelitas
+interpreter
 iterable
 multiline
 natively
