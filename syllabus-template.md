@@ -14,7 +14,7 @@ Builds upon the topics covered in Fundamentals of Computational Thinking and Pro
 Required Resources
 ------------------
 
-- None
+- [Course Lecture Notes](https://jncraton.github.io/oop-cpsc2030/lectures){target=_blank}
 
 Recommended Resources
 ---------------------
