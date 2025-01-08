@@ -116,6 +116,10 @@ Paradigms
 - Object-Oriented 
   - Uses objects to encapsulate data and behavior
   - C#, C++, Java, Python, Javascript
+
+Paradigms
+---------
+
 - Declarative 
   - SQL, HTML
 - Functional 
