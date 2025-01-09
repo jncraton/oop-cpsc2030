@@ -12,6 +12,7 @@ Lists
 
 - Store a sequence of values of any type
 - Mutable
+- [docs](https://docs.python.org/3/library/stdtypes.html#list)
 
 Example
 -------
@@ -26,6 +27,7 @@ Tuples
 
 - Store a sequence of values of any type
 - Immutable
+- [docs](https://docs.python.org/3/library/stdtypes.html#tuple)
 
 Example
 -------
@@ -40,6 +42,7 @@ Dictionaries
 
 - Store values of any type mapped to keys
 - Mutable
+- [docs](https://docs.python.org/3/library/stdtypes.html#dict)
 
 Example
 -------
@@ -49,3 +52,22 @@ legs = {'cat': 4, 'human': 2, 'spider': 8}
 
 print(legs['cat'])
 ```
+
+Sets
+----
+
+- Store unique values of any type
+- Values are unordered
+- [docs](https://docs.python.org/3/library/stdtypes.html#set)
+
+Example
+-------
+
+```python
+s = set([1, 2, 3 ,2, 1])
+
+print(len(s))
+```
+
+Nested Data Structures
+----------------------
