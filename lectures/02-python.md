@@ -10,8 +10,7 @@ Major Language Families
 - C
   - C++
 - Lisp
-  - Scheme
-    - Javascript
+  - Javascript
 
 [More info](https://en.wikipedia.org/wiki/Generational_list_of_programming_languages)
 
