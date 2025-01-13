@@ -60,6 +60,17 @@ Docstrings
 
 - docstrings are used to annotate modules, classes, and functions
 - They should be the first element within what they are describing
+- Somewhat like comments, but stored and accessible during runtime
+
+Variables
+---------
+
+- Named containers for values
+
+Expressions
+-----------
+
+- Evaluate to a value
 
 Logical Operators
 -----------------
