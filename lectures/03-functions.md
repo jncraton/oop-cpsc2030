@@ -101,3 +101,11 @@ Recursive functions
 
 - Functions may call themselves
 - This must be done carefully to avoid infinite recursion
+
+Example
+-------
+
+```python
+def power(base, exp):
+
+```
