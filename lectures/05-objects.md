@@ -14,7 +14,7 @@ Class
 Instance
 --------
 
-- A specific occurence of a class
+- A specific occurrence of a class
 
 Property
 --------
