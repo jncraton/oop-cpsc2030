@@ -64,7 +64,7 @@ Example
 -------
 
 ```python
-s = set([1, 2, 3 ,2, 1])
+s = {1, 2, 3 ,2, 1}
 
 print(len(s))
 ```
