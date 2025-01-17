@@ -4,7 +4,7 @@ Objects
 Object
 ------
 
-- Combines data and behavior
+- Combine data and behavior
 
 Class
 -----
