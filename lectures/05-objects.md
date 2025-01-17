@@ -55,3 +55,7 @@ Polymorphism
 
 Abstraction
   ~ Hide complexity behind clean interface
+
+---
+
+How does encapsulating data and behavior into objects improve code organization and maintainability?
