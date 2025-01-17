@@ -29,6 +29,14 @@ Method
 - Can be passed values and return values
 - Have access to object properties
 
+Class Examples
+--------------
+
+- list
+- dict
+- int
+- str
+
 Example
 -------
 
