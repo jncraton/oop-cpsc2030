@@ -1,3 +1,32 @@
+OO Design
+=========
+
+Iterative Process
+-----------------
+
+1. Analysis - Explore the problem
+2. Design - Draft a solution
+3. Implementation - Build the solution
+
+Four Principles of OOP
+----------------------
+
+Encapsulation
+  ~ Combine data, methods, and interfaces
+
+Inheritance
+  ~ Share members between classes
+
+Polymorphism
+  ~ Share interfaces between types
+
+Abstraction
+  ~ Hide complexity behind clean interface
+
+---
+
+How does encapsulating data and behavior into objects improve code organization and maintainability?
+
 Classes
 =======
 
