@@ -69,6 +69,11 @@ car.accelerate()
 print(car.speed)
 ```
 
+Exercise
+--------
+
+Extend the Vehicle class to include a `brake` method that sets the vehicle speed to `0`.
+
 Constructor
 -----------
 
@@ -94,3 +99,8 @@ self
 
 - The first argument passed to a method will be a reference to the object instance
 - `self` is chosen as the name for this parameter by convention
+
+Exercise
+--------
+
+Create a `Student` class. Students should have a name, and a list of course that you can `add` and `drop` via appropriate methods.
