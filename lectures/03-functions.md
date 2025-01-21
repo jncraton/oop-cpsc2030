@@ -102,7 +102,7 @@ Recursive functions
 - Functions may call themselves
 - This must be done carefully to avoid infinite recursion
 
-Excercise
+Exercise
 ---------
 
 Create a recursive function implementing the `power` function.

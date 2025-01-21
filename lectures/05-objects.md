@@ -42,7 +42,7 @@ Example
 
 Circle Area
 
-Excercise
+Exercise
 ---------
 
 Create a simple "Person" class with properties for name and age, and a method to introduce the person. Implement this class and create a few instances to demonstrate its usage.

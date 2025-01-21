@@ -1,8 +1,10 @@
-personal_ws-1.1 en 34 
+personal_ws-1.1 en 44 
 Benji
 CPSC
 Craton
+Deleter
 Docstrings
+Dunder
 Fortran
 Homebrew
 Javascript
@@ -18,15 +20,23 @@ REPL
 VM
 VirtualBox
 automata
+classname
+deleter
+deleters
 docstrings
+dunder
 fidelitas
+getters
 interpreter
 iterable
 multiline
+namespaced
 natively
 pre
 reimplement
+reusability
 runtime
+str
 utilitas
 veritas
 virt

@@ -115,7 +115,7 @@ person.name = "Jane Doe"
 print(person.name)
 ```
 
-Excercise
+Exercise
 ---------
 
 Create a class that encapsulates a rectangle with attributes for width and height, and methods to calculate the area and perimeter.
