@@ -103,4 +103,4 @@ self
 Exercise
 --------
 
-Create a `Student` class. Students should have a name, and a list of course that you can `add` and `drop` via appropriate methods.
+Create a `Student` class. Students should have a name, and a list of courses that you can `add` and `drop` via appropriate methods.
