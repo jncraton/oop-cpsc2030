@@ -111,8 +111,7 @@ class Person:
 
 person = Person("John Doe")
 print(person.name)
-person.name = "Jane Doe"
-print(person.name)
+person.name = 4
 ```
 
 Exercise
