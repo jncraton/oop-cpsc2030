@@ -36,13 +36,6 @@ class BankAccount:
             print("Insufficient funds")
         else:
             self.__balance -= amount
-
-account = BankAccount("1234567890", 1000.0)
-print(account.get_balance())
-account.deposit(500.0)
-print(account.get_balance())
-account.withdraw(200.0)
-print(account.get_balance())
 ```
 
 Access Modifiers
@@ -65,6 +58,8 @@ Induces name mangling:
 
 > Any identifier of the form __spam (at least two leading underscores, at most one trailing underscore) is textually replaced with _classname__spam, where classname is the current class name with leading underscore(s) stripped.
 
+---
+
 > It still is possible for a determined soul to access or modify a variable that is considered private.
 
 [docs](https://docs.python.org/3/tutorial/classes.html#private-variables)
@@ -83,35 +78,6 @@ class MyClass:
 obj = MyClass()
 print(obj.get_private_variable())
 print(obj.__private_variable)  # This will raise an AttributeError
-```
-
-Properties
-----------
-
-- Properties are a way to implement getters and setters for attributes in Python
-- They allow you to control access to an attribute and perform additional actions when the attribute is accessed or modified
-
-Example
--------
-
-```python
-class Person:
-    def __init__(self, name):
-        self._name = name
-
-    @property
-    def name(self):
-        return self._name
-
-    @name.setter
-    def name(self, value):
-        if not isinstance(value, str):
-            raise TypeError("Name must be a string")
-        self._name = value
-
-person = Person("John Doe")
-print(person.name)
-person.name = 4
 ```
 
 Exercise
