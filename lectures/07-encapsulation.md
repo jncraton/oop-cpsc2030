@@ -2,7 +2,7 @@ Encapsulation in Python
 ======================
 
 Introduction to Encapsulation
----------------------------
+-----------------------------
 
 - Encapsulation is a fundamental concept in object-oriented programming
 - It refers to the idea of bundling data and methods that operate on that data within a single unit
