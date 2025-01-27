@@ -26,7 +26,7 @@ Example
 ```python
 class Person:
     def __init__(self, name, age):
-        self.name = name
+        self._name = name
         self._age = age
 
     def get_age(self):
@@ -50,7 +50,7 @@ Example
 ```python
 class Person:
     def __init__(self, name, age):
-        self.name = name
+        self._name = name
         self._age = age
 
     @property
@@ -63,6 +63,12 @@ class Person:
             raise ValueError("Age must be a non-negative integer")
         self._age = age
 ```
+
+Exercise
+--------
+
+- Use `@property` and `@name.setter` to create a getter and setter for name
+- Name should only be allowed to be set to a string
 
 Deleter Decorators
 ------------------
