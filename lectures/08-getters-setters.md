@@ -75,46 +75,16 @@ Example
 
 ```python
 class Person:
-    def __init__(self, name, age):
+    def __init__(self, name):
         self._name = name
-        self._age = age
 
     @property
     def name(self):
         return self._name
 
-    @name.setter
-    def name(self, name):
-        if not isinstance(name, str):
-            raise TypeError("Name must be a string")
-        self._name = name
-
     @name.deleter
     def name(self):
-        del self._name
-
-    @property
-    def age(self):
-        return self._age
-
-    @age.setter
-    def age(self, age):
-        if not isinstance(age, int) or age < 0:
-            raise ValueError("Age must be a non-negative integer")
-        self._age = age
-
-    @age.deleter
-    def age(self):
-        del self._age
-
-person = Person("John", 30)
-print(person.name)  # Output: John
-del person.name
-try:
-    print(person.name)
-except AttributeError:
-    print("Name has been deleted")
-```
+        del self._name```
 
 Best Practices
 --------------
