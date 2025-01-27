@@ -4,21 +4,21 @@ Getters and Setters in Python
 Introduction
 ------------
 
-- Getters and setters are used to control access to an object's attributes
-- They allow us to perform validation, logging, or other actions when an attribute is accessed or modified
-
-Why Use Getters and Setters?
----------------------------
-
-- They provide a way to encapsulate data and behavior
-- They help to prevent data corruption or invalid states
-- They make it easier to change or extend the implementation of an object without affecting other parts of the program
+- Getters and setters are used to access attributes
+- May perform validation, logging, or other actions
 
 Basic Getters and Setters
 -------------------------
 
 - Getters are methods that return the value of an attribute
 - Setters are methods that modify the value of an attribute
+
+Why Use Getters and Setters?
+---------------------------
+
+- Encapsulate data and behavior
+- Prevent data corruption or invalid states
+- Afford change or extension
 
 Example
 -------
