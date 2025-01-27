@@ -26,16 +26,8 @@ Example
 ```python
 class Person:
     def __init__(self, name, age):
-        self._name = name
+        self.name = name
         self._age = age
-
-    def get_name(self):
-        return self._name
-
-    def set_name(self, name):
-        if not isinstance(name, str):
-            raise TypeError("Name must be a string")
-        self._name = name
 
     def get_age(self):
         return self._age
@@ -44,11 +36,6 @@ class Person:
         if not isinstance(age, int) or age < 0:
             raise ValueError("Age must be a non-negative integer")
         self._age = age
-
-person = Person("John", 30)
-print(person.get_name())  # Output: John
-person.set_name("Jane")
-print(person.get_name())  # Output: Jane
 ```
 
 Property Decorators
