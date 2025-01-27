@@ -169,4 +169,6 @@ class Rectangle:
 Discussion
 ----------
 
-How do getters and setters improve the design of a class? What are some common use cases for getters and setters? How do property decorators simplify the implementation of getters and setters?
+- How do getters and setters improve the design of a class?
+- What are some common use cases for getters and setters? 
+- How do property decorators simplify the implementation of getters and setters?
