@@ -77,7 +77,7 @@ class MyClass:
 
 obj = MyClass()
 print(obj.get_private_variable())
-print(obj.__private_variable)  # This will raise an AttributeError
+print(obj.__private_variable)  # Raises an AttributeError
 ```
 
 Exercise
