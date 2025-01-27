@@ -103,16 +103,11 @@ Best Practices
 Exercise
 --------
 
-Create a class `Rectangle` with attributes `width` and `height`. Use getters and setters to control access to these attributes. Implement a deleter for the `width` attribute.
-
-```python
-class Rectangle:
-    def __init__(self, width, height):
-        self._width = width
-        self._height = height
-
-    # Implement getters, setters, and deleter here
-```
+1. Create a `User` class with a __password attribute
+2. Use `property` and `setter`, decorators to protect the password
+3. The `password` should be a string with a minimum length of 8 characters
+4. The `password` should contain at least one uppercase letter, one lowercase letter, and one digit
+5. Attempting to set an invalid `password` should raise a `ValueError`
 
 Discussion
 ----------
