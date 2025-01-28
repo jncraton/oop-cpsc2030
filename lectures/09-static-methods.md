@@ -60,8 +60,8 @@ Special Methods
 - In Python, we can define special methods inside a class that are called automatically in certain situations
 - These methods are surrounded by double underscores (also called "dunder" methods)
 
-`__str__` and `__repr__`
--------------------------
+String Representation
+---------------------
 
 - `__str__` returns a readable string
 - `__repr__` returns an unambiguous string
@@ -86,8 +86,8 @@ print(person)
 print(repr(person))
 ```
 
-`__eq__` and `__lt__`
-----------------------
+Comparison
+----------
 
 - `__eq__` checks if two objects are equal
 - `__lt__` checks if one object is less than another
