@@ -90,7 +90,8 @@ class Person:
 
     @name.deleter
     def name(self):
-        del self._name```
+        del self._name
+```
 
 Best Practices
 --------------
