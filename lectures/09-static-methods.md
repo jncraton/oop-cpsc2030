@@ -1,19 +1,21 @@
 Static and Class Methods in Python
 =================================
 
-Introduction to Static and Class Methods
+Overview
 ----------------------------------------
 
-- In Python, we can define methods inside a class that belong to the class itself, rather than instances of the class
+- Some methods can belong to the class instead of instances
 - These methods are called static methods and class methods
-- They are used to group related functionality together and to provide alternative ways of creating instances
+- Used to group related functionality together
+- May provide alternative ways of creating instances
 
 Static Methods
 --------------
 
 - Static methods are methods that belong to a class, rather than instances of the class
 - They are defined using the `@staticmethod` decorator
-- They do not have access to the class or instance, and are essentially just functions that are namespaced by the class
+- They do not have access to the class or instance
+- Essentially just functions that are namespaced by the class
 
 Example
 -------
@@ -61,8 +63,8 @@ Special Methods
 `__str__` and `__repr__`
 -------------------------
 
-- The `__str__` method is called when we want to get a human-readable representation of an object
-- The `__repr__` method is called when we want to get a representation of an object that is useful for debugging
+- `__str__` returns a readable string
+- `__repr__` returns an unambiguous string
 
 Example
 -------
@@ -80,15 +82,15 @@ class Person:
         return f'Person(name={self.name}, age={self.age})'
 
 person = Person('John', 30)
-print(person)  # prints: John, 30 years old
-print(repr(person))  # prints: Person(name=John, age=30)
+print(person)
+print(repr(person))
 ```
 
 `__eq__` and `__lt__`
 ----------------------
 
-- The `__eq__` method is called when we want to check if two objects are equal
-- The `__lt__` method is called when we want to check if one object is less than another
+- `__eq__` checks if two objects are equal
+- `__lt__` checks if one object is less than another
 
 Example
 -------
@@ -105,16 +107,18 @@ class Person:
     def __lt__(self, other):
         return self.age < other.age
 
-person1 = Person('John', 30)
-person2 = Person('John', 30)
-print(person1 == person2)  # prints: True
-print(person1 < person2)  # prints: False
+alice = Person('Alice', 30)
+bob = Person('Bob', 30)
+print(alice == bob)
+print(alice < bob)
 ```
 
 Exercise
 --------
 
-Create a class `Vector` with `x` and `y` attributes, and implement the `__str__`, `__repr__`, `__eq__`, and `__lt__` methods.
+- Create a class `Vector` with `x` and `y` attributes
+- Implement `__repr__`, `__eq__`, and `__lt__`
+- `__lt__` should use Euclidean norm for comparison
 
 ```python
 class Vector:
@@ -129,9 +133,3 @@ Discussion
 ----------
 
 Why would we want to implement special methods in our classes?
-
-Best Practices
---------------
-
-- Use static methods and class methods to group related functionality together and to provide alternative ways of creating instances
-- Use special methods to provide a human-readable representation of an object, and to implement equality and comparison operators
