@@ -27,20 +27,6 @@ git push -u origin main
 git clone https://github.com/username/repo.git
 ```
 
-## Git Workflow Strategies
-
-- Gitflow
-- GitHub Flow
-- GitLab Flow
-- Trunk-based Development
-
-## Gitflow Workflow
-
-- Develop and main branches
-- Feature branches
-- Release branches
-- Hotfix branches
-
 ## Rebasing
 
 - Alternative to merging
