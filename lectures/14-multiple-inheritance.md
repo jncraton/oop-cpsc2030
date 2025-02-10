@@ -2,7 +2,7 @@
 
 ## Inheritance Hierarchy
 
-- Multiple levels of inheritance.
+- Multiple levels of inheritance
 
 ## Example: Inheritance Hierarchy
 
@@ -19,12 +19,12 @@ class ElectricCar(Car):
 
 ## Exercise
 
-Create a `SportsCar` class that inherits from `Car`.
+Create a `SportsCar` class that inherits from `Car`
 
 ## Method Resolution Order (MRO)
 
 - Python uses MRO to resolve method calls.
-- The algorithm used in [C3 linearization](https://en.wikipedia.org/wiki/C3_linearization}
+- The algorithm used is [C3 linearization](https://en.wikipedia.org/wiki/C3_linearization}
 
 ## Example: MRO
 
@@ -43,7 +43,7 @@ b.method()  # Output: B method
 
 ## Multiple Inheritance
 
-- A class can inherit from multiple classes.
+- A class can inherit from multiple classes
 
 ## Example: Multiple Inheritance
 
@@ -62,7 +62,7 @@ Create a `HybridBike` class that inherits from `Bike` and `Electric`.
 
 ## Diamond Problem
 
-- Ambiguity in method resolution.
+- Ambiguity in method resolution
 
 ---
 
