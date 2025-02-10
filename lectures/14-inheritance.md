@@ -1,4 +1,4 @@
-# Advanced Inheritance
+# Multiple Inheritance
 
 ## Inheritance Hierarchy
 
