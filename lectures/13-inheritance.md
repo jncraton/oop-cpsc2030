@@ -94,7 +94,3 @@ class HybridCar(Car):
         super().__init__(brand)
         self.fuel_type = fuel_type
 ```
-
-## Exercise
-
-Use `super()` in `Bike` to initialize `brand`.
