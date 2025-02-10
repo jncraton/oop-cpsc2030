@@ -1,3 +1,7 @@
+![](https://i.postimg.cc/qgVkhmXp/Opportunity-Fair-Draft.png)
+
+---
+
 # Multiple Inheritance
 
 ## Inheritance Hierarchy
