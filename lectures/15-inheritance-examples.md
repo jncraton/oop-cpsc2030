@@ -1,8 +1,8 @@
-# Inheritance
+# Inheritance Examples
 
 ## Real-World Example: Library System
 
-- Books, magazines, and journals.
+- Books, magazines, and journals
 
 ## Example: Library System
 
@@ -22,11 +22,11 @@ class Magazine(Item):
 
 ## Exercise
 
-Create a `Journal` class that inherits from `Item`.
+Create a `Journal` class that inherits from `Item`
 
 ## Real-World Example: E-Commerce
 
-- Products, categories, and discounts.
+- Products, categories, and discounts
 
 ## Example: E-Commerce
 
@@ -47,11 +47,11 @@ class DiscountedProduct(Product):
 
 ## Exercise
 
-Create a `Category` class with a `display` method.
+Create a `Category` class with a `display` method
 
 ## Real-World Example: Social Media
 
-- Users, posts, and comments.
+- Users, posts, and comments
 
 ## Example: Social Media
 
@@ -73,11 +73,11 @@ class Comment(Post):
 
 ## Exercise
 
-Create a `Reply` class that inherits from `Comment`.
+Create a `Reply` class that inherits from `Comment`
 
 ## Real-World Example: Banking
 
-- Accounts, transactions, and savings.
+- Accounts, transactions, and savings
 
 ## Example: Banking
 
@@ -97,11 +97,11 @@ class SavingsAccount(Account):
 
 ## Exercise
 
-Create a `CheckingAccount` class with a `withdraw` method.
+Create a `CheckingAccount` class with a `withdraw` method
 
 ## Real-World Example: Game Development
 
-- Characters, items, and abilities.
+- Characters, items, and abilities
 
 ## Example: Game Development
 
@@ -122,11 +122,11 @@ class Mage(Character):
 
 ## Exercise
 
-Create a `Rogue` class with a `stealth` method.
+Create a `Rogue` class with a `stealth` method
 
 ## Real-World Example: IoT Devices
 
-- Sensors, actuators, and controllers.
+- Sensors, actuators, and controllers
 
 ## Example: IoT Devices
 
@@ -146,9 +146,4 @@ class Actuator(Device):
 
 ## Exercise
 
-Create a `Controller` class with a `control` method.
-
-## Conclusion
-
-- Inheritance is a powerful tool for code reuse and organization.
-- Practice with real-world examples to solidify understanding.
+Create a `Controller` class with a `control` method
