@@ -93,3 +93,27 @@ class D(B, C):
 d = D()
 d.method()
 ```
+
+## Real-World Example: Library System
+
+- Books, magazines, and journals
+
+## Example: Library System
+
+```python
+class Item:
+    def __init__(self, title):
+        self.title = title
+
+class Book(Item):
+    def read(self):
+        return f"Reading {self.title} book."
+
+class Magazine(Item):
+    def browse(self):
+        return f"Browsing {self.title} magazine."
+```
+
+## Exercise
+
+Create a `Journal` class that inherits from `Item`
