@@ -28,7 +28,7 @@ Create a `SportsCar` class that inherits from `Car`
 ## Method Resolution Order (MRO)
 
 - Python uses MRO to resolve method calls.
-- The algorithm used is [C3 linearization](https://en.wikipedia.org/wiki/C3_linearization}
+- The algorithm used is [C3 linearization](https://en.wikipedia.org/wiki/C3_linearization)
 
 ## Example: MRO
 
