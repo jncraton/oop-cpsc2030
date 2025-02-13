@@ -54,3 +54,7 @@ Dog --|> Animal
 - Base class: `Vehicle`
 - Derived classes: `Car`, `Bike`
 - Attributes and methods as appropriate
+
+---
+
+[Full Documentation](https://plantuml.com/class-diagram)
