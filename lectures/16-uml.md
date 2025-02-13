@@ -63,6 +63,23 @@ class Person {
 
 ## Exercise
 
+- Create a class diagram for `range`
+
+<!--
+@startuml
+class range {
+  +start: int
+  +step: int
+  +stop: int
+  +__init__(start: int, stop: int, step: int)
+  +count(value): int
+  +index(value): int
+}
+@enduml
+-->
+
+## Exercise 
+
 - Create a class diagram for `list`
 
 <!--
