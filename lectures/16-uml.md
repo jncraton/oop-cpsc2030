@@ -60,3 +60,25 @@ class Person {
 - Create a simple class diagram for a `Car` class
 - Attributes: `make`, `model`, `year`
 - Methods: `start()`, `stop()`
+
+## Exercise
+
+- Create a class diagram for `list`
+
+<!--
+@startuml
+class list {
+  +append(other)
+  +clear()
+  +copy()
+  +count(value)
+  +extend(other: list)
+  +index(value): int
+  +insert(value)
+  +pop(position = 0: int): value
+  +remove()
+  +reverse()
+  +sort()
+}
+@enduml
+-->
