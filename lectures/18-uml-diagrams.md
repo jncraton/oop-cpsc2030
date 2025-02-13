@@ -43,9 +43,3 @@ state Light {
 - Create a state diagram for a `TrafficLight`class
 - States: `Red`, `Yellow`, `Green`
 - Transitions: `Red -> Green`, `Green -> Yellow`, `Yellow -> Red`
-
-## Conclusion
-
-- UML and PlantUML are powerfulTools
-- PracticeCreatingDiagrams
-- UseDiagramsforDesignandDocumentation
