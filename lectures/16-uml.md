@@ -12,6 +12,23 @@
 - Diagrams: Class, Sequence, State, Use Case, etc.
 - Helps in design and documentation
 
+---
+
+![Class Diagram](https://upload.wikimedia.org/wikipedia/commons/4/41/BankAccount1.svg){height=540px}
+
+## Diagram Groups
+
+- Structure (class diagram, etc)
+- Behavior (activity diagram, etc)
+
+---
+
+![Activity Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Activity_conducting.svg/443px-Activity_conducting.svg.png)
+
+---
+
+![Use Case Diagram](https://upload.wikimedia.org/wikipedia/commons/1/1d/Use_case_restaurant_model.svg){height=540px}
+
 ## PlantUML Basics
 
 - Text-based UML diagrams
