@@ -38,7 +38,7 @@
 ## Using PlantUML
 
 - Download PlantUML jar file
-- Use [online editors](plantuml.com)
+- Use [online editors](https://plantuml.com/plantuml)
 - Integrate with IDEs
 
 ## Example: Class Diagram
