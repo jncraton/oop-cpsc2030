@@ -63,7 +63,7 @@ Dog --|> Animal
 
 ## Sequence Diagrams
 
-- Show interactions betweenObjects
+- Show interactions between objects
 - Use `participant` and `->` to denote interactions
 
 ## Example: Sequence Diagram
@@ -82,7 +82,7 @@ System -> User: Authenticated
 
 ## State Diagrams
 
-- ShowStatesAndTransitions
+- Show states and transitions
 - Use `state` and `->` to denote states and transitions
 
 ## Example: State Diagram
