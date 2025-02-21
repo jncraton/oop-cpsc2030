@@ -7,7 +7,7 @@
 
 ## What is Polymorphism?
 
-- Ability of an object to take on many forms
+- Provision of one interface to entities of different data types
 - Common in inheritance hierarchies
 
 ## Example: Animal Class
@@ -57,6 +57,46 @@ animal_speak(dog)  # Woof!
 animal_speak(cat)  # Meow!
 ```
 
+## Example: Bird Class
+
+```python
+class Bird(Animal):
+    def speak(self):
+        return "Chirp!"
+```
+
+## Example: Fish Class
+
+```python
+class Fish(Animal):
+    def speak(self):
+        return "Blub!"
+```
+
+## Zoo function
+
+```python
+def zoo_sounds(animals):
+    for animal in animals:
+        print(animal.speak())
+```
+
+## Using the function
+
+```python
+dog = Dog()
+cat = Cat()
+bird = Bird()
+fish = Fish()
+
+zoo_sounds([dog, cat, bird, fish])
+```
+
+## Exercise
+
+- Create a new animal class with a speak method
+- Use it with the zoo_sounds function
+
 ## Benefits of Polymorphism
 
 - Code flexibility
@@ -77,28 +117,29 @@ class Duck:
 animal_speak(Duck())  # Quack!
 ```
 
-## Abstract Base Classes
-
-- Define a blueprint for child classes
-- Ensure methods are implemented
-
-## Example: Abstract Base Class
+## Duck Typing in Practice
 
 ```python
-from abc import ABC, abstractmethod
+class Car:
+    def drive(self):
+        return "Vroom!"
 
-class Animal(ABC):
-    @abstractmethod
-    def speak(self):
-        pass
+class Bike:
+    def ride(self):
+        return "Zoom!"
 ```
 
-## Polymorphism in Practice
+## Test Behaviors
 
-- Real-world examples
-- Design patterns
+```python
+def vehicle_action(vehicle):
+    if hasattr(vehicle, 'drive'):
+        print(vehicle.drive())
+    elif hasattr(vehicle, 'ride'):
+        print(vehicle.ride())
+```
 
 ## Exercise
 
-Create a `Vehicle` class with a `drive` method
-Create subclasses `Car` and `Bike` with their own `drive` methods
+- Add a new vehicle class with a different method
+- Use it with the vehicle_action function
