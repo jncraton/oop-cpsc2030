@@ -1,4 +1,4 @@
-# Abstract Base Classes and Operator Overloading in Python
+# Abstract Base Classes and Operator Overloading
 
 ## Abstract Base Classes (ABCs)
 
@@ -6,11 +6,11 @@
 - Use `abc` module
 - Enforce method implementation
 
-## Why Use ABCs?
+## Defining Abstract Base Class
 
-- Ensure subclasses implement specific methods
-- Provide a standard interface
-- Improve code maintainability
+- Inherit from the `ABC` class
+- Decorate abstract methods using `@abstractmethod`
+- Other methods may be included
 
 ## Example: Defining an ABC
 
@@ -23,7 +23,7 @@ class Shape(ABC):
         pass
 ```
 
-## Implementing an ABC
+## Example
 
 ```python
 class Circle(Shape):
@@ -33,6 +33,19 @@ class Circle(Shape):
     def area(self):
         return 3.14 * (self.radius ** 2)
 ```
+
+## Why Use ABCs?
+
+- Ensure subclasses implement specific methods
+- Provide a standard interface
+- Improve code maintainability
+
+## Exercise
+
+Create an abstract base class `SpaceStation` with:
+
+1. An abstract method `dock_ship` that takes a ship's name and cargo capacity as parameters
+2. A method `get_station_status` that returns the current status of the space station
 
 ## Operator Overloading
 
