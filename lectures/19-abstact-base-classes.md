@@ -112,12 +112,8 @@ v1 = Vector(1, 2)
 v2 = Vector(3, 4)
 v3 = v1 + v2
 v4 = v1 - v2
-v5 = v1 * 2
-v6 = v1 / 2
 print(v3.x, v3.y)  # Output: 4 6
 print(v4.x, v4.y)  # Output: -2 -2
-print(v5.x, v5.y)  # Output: 2 4
-print(v6.x, v6.y)  # Output: 0.5 1.0
 ```
 
 
