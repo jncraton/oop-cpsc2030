@@ -80,6 +80,9 @@ print(v3.x, v3.y)  # Output: 4 6
 - `-` (subtract)
 - `*` (multiply)
 - `/` (divide)
+
+## Comparison Operators
+
 - `==` (equality)
 - `!=` (inequality)
 - `<` (less than)
@@ -100,30 +103,6 @@ class Vector:
 
     def __sub__(self, other):
         return Vector(self.x - other.x, self.y - other.y)
-
-    def __mul__(self, scalar):
-        return Vector(self.x * scalar, self.y * scalar)
-
-    def __truediv__(self, scalar):
-        return Vector(self.x / scalar, self.y / scalar)
-
-    def __eq__(self, other):
-        return self.x == other.x and self.y == other.y
-
-    def __ne__(self, other):
-        return not self == other
-
-    def __lt__(self, other):
-        return (self.x, self.y) < (other.x, other.y)
-
-    def __gt__(self, other):
-        return (self.x, self.y) > (other.x, other.y)
-
-    def __le__(self, other):
-        return (self.x, self.y) <= (other.x, other.y)
-
-    def __ge__(self, other):
-        return (self.x, self.y) >= (other.x, other.y)
 ```
 
 ## Using Overloaded Operators
@@ -141,9 +120,6 @@ print(v5.x, v5.y)  # Output: 2 4
 print(v6.x, v6.y)  # Output: 0.5 1.0
 ```
 
-## Exercise
-
-Create a `Rectangle` class that inherits from `Shape` and implements the `area` method
 
 ## Exercise
 
@@ -151,8 +127,4 @@ Overload the `*` operator for the `Vector` class to support scalar multiplicatio
 
 ## Exercise
 
-Overload the `==` and `!=` operators for the `Vector` class to compare vectors
-
-## Exercise
-
-Overload the `<` and `>` operators for the `Vector` class to compare vectors based on magnitude
+Overload the `<` and `>` operators for the `Vector` class to compare vectors component-wise
