@@ -44,9 +44,9 @@ lecture	Exceptions
 lecture	Unit Testing
 lecture	Serialization
 lab	lab 8
-lecture	Concurrency
-lecture	Concurrency
-lecture	Concurrency
+lecture	Threads
+lecture	Syncronization and Locks
+lecture	Multiprocessing
 lab	Project Workday
 lecture	C++
 lecture	C++
