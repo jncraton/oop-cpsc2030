@@ -109,7 +109,7 @@ class NonterminalExpression(Expression):
 
 ## Exercise: Interpreter
 
-- Create an interpreter for a simple boolean language
+- Create an interpreter for a simple Boolean language
 - Test with different sentences
 
 ## Iterator
