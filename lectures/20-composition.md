@@ -29,6 +29,33 @@ class Car:
 
 ![UML Composition](vehicle-composition.png){height=240px}
 
+## Exercise
+
+Create a `Battery` class and use it in a `Car` class
+
+## Multiple Objects
+
+```python
+class Wheel:
+    def rotate(self):
+        return "Wheel rotating"
+
+class Car:
+    def __init__(self):
+        self.wheels = [Wheel() for _ in range(4)]
+
+    def drive(self):
+        return [wheel.rotate() for wheel in self.wheels]
+```
+
+## Exercise
+
+Create a `Car` class that accepts any type of `Engine` at runtime
+
+## Exercise
+
+Create a `Bus` class that can hold multiple `Passenger` objects
+
 ## Benefits of Composition
 
 - Reusability
@@ -61,7 +88,7 @@ class BankAccount:
 
 - Simplifies code
 - Reduces complexity
-- Enhances security
+- Improves security
 
 ## Composition vs. Inheritance
 
