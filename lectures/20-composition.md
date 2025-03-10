@@ -25,6 +25,10 @@ class Car:
         self.engine.start()
 ```
 
+---
+
+![UML Composition](vehicle-composition.png){height=240px}
+
 ## Benefits of Composition
 
 - Reusability
