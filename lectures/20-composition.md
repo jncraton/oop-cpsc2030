@@ -24,6 +24,20 @@ class Car:
 
 ![UML Composition](vehicle-composition.png){height=240px}
 
+## PlantUML
+
+```puml
+@startuml
+class Engine {
+}
+
+class Vehicle {
+}
+
+Engine -o Vehicle
+@enduml
+```
+
 ## Exercise
 
 Create a `Battery` class and use it in a `Car` class
