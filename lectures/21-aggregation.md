@@ -50,6 +50,7 @@ print(car.start())
 ## Exercise
 
 Create a `Student` class and a `Course` class
+
 - `Student` should have a name and age
 - `Course` should have a name and a list of students
 
