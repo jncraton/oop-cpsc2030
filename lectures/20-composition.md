@@ -1,9 +1,4 @@
-# Composition and Abstraction
-
-## Introduction
-
-- Composition: Building complex objects from simpler ones
-- Abstraction: Hiding complexity, exposing essential features
+# Composition
 
 ## What is Composition?
 
