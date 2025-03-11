@@ -34,7 +34,7 @@ class Engine {
 class Vehicle {
 }
 
-Engine -o Vehicle
+Engine -* Vehicle
 @enduml
 ```
 
