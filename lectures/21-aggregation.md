@@ -7,6 +7,11 @@
 
 ## Example: Car and Engine
 
+- Car has an Engine
+- Engine can be replaced
+
+## Aggregation
+
 ```python
 class Engine:
     def start(self):
@@ -24,22 +29,40 @@ car = Car(engine)
 print(car.start())
 ```
 
+## Composition
+
+```python
+class Engine:
+    def start(self):
+        return "Engine started"
+
+class Car:
+    def __init__(self):
+        self.engine = Engine()
+
+    def start(self):
+        return self.engine.start()
+
+car = Car()
+print(car.start())
+```
+
 ## Exercise
 
 Create a `Student` class and a `Course` class
 - `Student` should have a name and age
 - `Course` should have a name and a list of students
 
+## Aggregation vs Composition
+
+- Aggregation: Objects can exist independently
+- Composition: Objects cannot exist independently
+
 ## Exercise
 
 - Create a `Library` class
 - `Library` should have a list of books
 - Add methods to add and remove books
-
-## Aggregation vs Composition
-
-- Aggregation: Objects can exist independently
-- Composition: Objects cannot exist independently
 
 
 ## Aggregation vs Composition
