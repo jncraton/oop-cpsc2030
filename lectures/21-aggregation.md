@@ -80,7 +80,7 @@ Engine -o Vehicle
 ## Exercise
 
 - Create a `Library` class
-- `Library` should have a list of books
+- `Library` should have a list of `Book` objects
 - Add methods to add and remove books
 
 
