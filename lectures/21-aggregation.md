@@ -54,6 +54,24 @@ Create a `Student` class and a `Course` class
 - `Student` should have a name and age
 - `Course` should have a name and a list of students
 
+## UML
+
+```puml
+@startuml
+class Engine {
+}
+
+class Vehicle {
+}
+
+Engine -o Vehicle
+@enduml
+```
+
+---
+
+![Aggregation](vehicle-aggregation.png)
+
 ## Aggregation vs Composition
 
 - Aggregation: Objects can exist independently
