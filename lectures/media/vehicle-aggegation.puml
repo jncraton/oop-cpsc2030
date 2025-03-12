@@ -1,0 +1,9 @@
+@startuml
+class Engine {
+}
+
+class Vehicle {
+}
+
+Engine -o Vehicle
+@enduml
