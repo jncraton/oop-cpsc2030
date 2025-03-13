@@ -235,6 +235,35 @@ proxy = Proxy(real_subject)
 print(proxy.request())
 ```
 
-## Exercise
+## Example
 
-- Create a `Proxy` for a `Database` to control access
+```python
+import json
+
+class PersistentDict():
+    def __init__(self, filename):
+        self.__filename = filename
+        self.__items = dict()
+        
+        try:
+            with open(filename) as f:
+                self.__items = json.load(f)
+        except FileNotFoundError:
+            pass
+        
+    def as_json(self):
+        return json.dumps(self.__items)
+        
+    def __setitem__(self, item, value):
+        self.__items[item] = value
+        
+        with open(self.__filename, "w") as f:
+            f.write(self.as_json())
+            
+    def __getitem__(self, item):
+        return self.__items[item]
+        
+d = PersistentDict("data.json")
+d["name"] = "Alice"
+d["age"] = 25
+```
