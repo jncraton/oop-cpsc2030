@@ -101,6 +101,11 @@ class Level1:
 - Separates the construction of a complex object from its representation
 - Allows step-by-step object creation
 
+## Builder vs Abstract Factory
+
+- A Builder focuses on building an object step-by-step through a director
+- A factory has a number of methods to build complete objects
+
 ## Builder Example
 
 ```python
