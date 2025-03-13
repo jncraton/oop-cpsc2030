@@ -8,18 +8,92 @@
 ## Abstract Factory
 
 - Provides an interface for creating families of related objects
-- Encapsulates object creation
+- Does not specify concrete classes
+
+## Maze Example
+
+```python
+class Site:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        self.theme = "blue"
+        self.pathable = False
+
+class Wall(Site):
+    pass
+
+class Room(Site):
+    def __init__(self, x, y):
+        super().__init__(x, y)
+        self.pathable = True
+
+class SiteFactory:
+    @staticmethod
+    def makeWall(x, y):
+        return Wall(x, y)
+
+    @staticmethod
+    def makeRoom(x, y):
+        return Room(x, y)
+
+class Level1:
+    def __init__(self, factory):
+        self.sites = []
+        self.sites.append(Wall(1, 1))
+        self.sites.append(Wall(1, 2))
+        self.sites.append(Wall(1, 3))
+        self.sites.append(Wall(2, 1))
+        self.sites.append(Room(2, 2))
+        self.sites.append(Wall(2, 3))
+        self.sites.append(Wall(3, 1))
+        self.sites.append(Wall(3, 2))
+        self.sites.append(Wall(3, 3))
+```
+
+---
+
+What if we want to change the theme of the level?
 
 ## Abstract Factory Example
 
 ```python
-class DogFactory:
-    def get_pet(self):
-        return Dog()
+class Site:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        self.theme = "blue"
+        self.pathable = False
 
-class CatFactory:
-    def get_pet(self):
-        return Cat()
+class Wall(Site):
+    pass
+
+class Room(Site):
+    def __init__(self, x, y):
+        super().__init__(x, y)
+        self.pathable = True
+
+class SiteFactory:
+    @staticmethod
+    def makeWall(x, y):
+        return Wall(x, y)
+    
+    @staticmethod
+    def makeRoom(x, y):
+        return Room(x, y)
+    
+class Level1:
+    def __init__(self, factory):
+        self.sites = []
+        self.sites.append(factory.makeWall(1, 1))
+        self.sites.append(factory.makeWall(1, 2))
+        self.sites.append(factory.makeWall(1, 3))
+        self.sites.append(factory.makeWall(2, 1))
+        self.sites.append(factory.makeRoom(2, 2))
+        self.sites.append(factory.makeWall(2, 3))
+        self.sites.append(factory.makeWall(3, 1))
+        self.sites.append(factory.makeWall(3, 2))
+        self.sites.append(factory.makeWall(3, 3))
 ```
 
 ## Builder
