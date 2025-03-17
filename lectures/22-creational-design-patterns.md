@@ -1,4 +1,4 @@
-# Creational Design Patterns in Python
+# Creational Design Patterns
 
 ## Introduction
 
