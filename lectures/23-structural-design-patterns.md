@@ -1,4 +1,4 @@
-# Structural Design Patterns in Python
+# Structural Design Patterns
 
 ## Introduction
 
@@ -32,7 +32,7 @@ class TurkeyAdapter:
 
 ## Exercise
 
-- Create an `Adapter` for a `Car` class to make it quack like a `Duck`
+- Create a `SetAdapter` for the `list` class to allow it to support `intersection`, `difference`, and `union` like a `set`
 
 ## Bridge Pattern
 
@@ -197,16 +197,12 @@ flyweight2 = factory.get_flyweight("state1")
 print(flyweight1 is flyweight2)
 ```
 
-## Exercise
-
-- Create a `Character` flyweight for a text editor
-
 ## Proxy Pattern
 
 - Provides a surrogate or placeholder for another object
 - Controls access to the object
 
-## Proxy Example
+## Example
 
 ```python
 class Subject:
