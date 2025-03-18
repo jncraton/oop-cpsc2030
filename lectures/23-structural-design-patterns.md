@@ -1,12 +1,3 @@
-Tech Talk Today
----------------
-
-- Decker 346, Noon
-- Pizza
-- Jim Ostrognai
-  - AU Alum
-  - Senior VP of Engineering at Salesforce
-
 # Structural Design Patterns
 
 ## Introduction
