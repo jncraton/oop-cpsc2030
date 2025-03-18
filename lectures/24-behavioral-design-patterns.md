@@ -36,10 +36,40 @@ class ConcreteHandler2(Handler):
             super().handle(request)
 ```
 
-## Exercise: Chain of Responsibility
+## Example: JS Event Handlers
 
-- Create a chain of handlers for processing different types of requests
-- Test with various requests
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Event Chain</title>
+    <style></style>
+  </head>
+
+  <body>
+    <main>
+      <article>
+        <section>
+          <button>Click me</button>
+        </section>
+      </article>
+    </main>
+
+    <script>
+    document.querySelector('button').addEventListener('click', (e) => {
+      console.log('Clicked')
+      e.stopPropagation()
+    })
+    document.querySelector('main').addEventListener('click', (e) => {
+      console.log('Clicked main')
+    })
+    </script>
+  </body>
+</html>
+```
 
 ## Command
 
@@ -107,10 +137,21 @@ class NonterminalExpression(Expression):
         return self._expr1.interpret(context) and self._expr2.interpret(context)
 ```
 
-## Exercise: Interpreter
+## Example: re
 
-- Create an interpreter for a simple Boolean language
-- Test with different sentences
+```python
+import re
+
+address = """
+1100 E. 5th St.
+Anderson, IN
+46012
+"""
+
+state_match = re.compile("[A-Z][A-Z]")
+
+print(state_match.findall(address))
+```
 
 ## Iterator
 
