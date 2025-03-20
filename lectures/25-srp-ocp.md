@@ -1,3 +1,13 @@
+Design Principles for OOP
+=========================
+
+---
+
+- [Design Principles and
+Design Patterns](https://web.archive.org/web/20150906155800/http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf)
+- Written by Bob Martin in 2000
+- Established [SOLID](https://en.wikipedia.org/wiki/SOLID) principles, though the acronym came later
+
 Single Responsibility Principle (SRP)
 =====================================
 
