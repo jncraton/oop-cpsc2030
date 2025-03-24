@@ -21,7 +21,7 @@ The 'S' in SOLID
 
 ---
 
-![SRP](figures/srp.png)
+![SRP](media/srp.png)
 
 ---
 
