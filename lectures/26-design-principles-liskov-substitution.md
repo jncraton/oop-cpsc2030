@@ -5,65 +5,75 @@ Liskov Substitution Principle (LSP)
 
 Subtypes must be substitutable for their base types.
 
+## Why is LSP Important?
+
+- Ensures code reliability
+- Promotes code reusability
+- Reduces bugs
+
 Example
 -------
 
 ```python
-class Cat(Animal):
-  def meow():
-    play('meow.mp3')
+class Person:
+    def __init__(self, name):
+        self.name = name
 
+    def participate_in_game(self):
+        return f"{self.name} is participating in the game."
 
-class Dog(Animal):
-  def bark():
-    play('bark.mp3')
+class Player(Person):
+    def participate_in_game(self):
+        return f"{self.name} is playing basketball."
+
+class Coach(Person):
+    def participate_in_game(self):
+        raise ValueError("Coaches do not play the game, they coach.")
+
+# Example usage
+def simulate_game(person):
+    print(person.participate_in_game())
+
+player = Player("Michael Jordan")
+coach = Coach("Phil Jackson")
+
+simulate_game(player)  # This works fine
+simulate_game(coach)   # This will raise a ValueError
 ```
 
 ---
 
-```python
-def make_sound(animal):
-  if animal.bark:
-    animal.bark()
-
-  if animal.meow:
-    animal.meow()
-```
-
----
-
-This violates LSP as Cat and Dog are not interchangeable with their base class.
+This violates LSP as Coach is not interchangeable with Person.
 
 ---
 
 This would satisfy LSP:
 
 ```python
-class Cat(Animal):
-  def make_sound():
-    play('meow.mp3')
+class Person:
+    def __init__(self, name):
+        self.name = name
 
+    def participate_in_game(self):
+        return f"{self.name} is participating in the game."
 
-class Dog(Animal):
-  def make_sound():
-    play('bark.mp3')
-```
+class Player(Person):
+    def participate_in_game(self):
+        return f"{self.name} is playing basketball."
 
----
+class Coach(Person):
+    def participate_in_game(self):
+        return f"{self.name} is coaching the game."
 
-A violation of LSP is a violation of OCP.
+# Example usage
+def simulate_game(person):
+    print(person.participate_in_game())
 
----
+player = Player("Michael Jordan")
+coach = Coach("Phil Jackson")
 
-```python
-class Rectange():
-  ...
-  setWidth(self, w):
-    self.width = w
-  setHeight(self, h):
-    self.height = h
-  getArea(self):
-    return self.width * self.height
+simulate_game(player)  # This works fine
+simulate_game(coach)   # This works fine
 ```
 
 ---
@@ -150,49 +160,21 @@ Unit Testing
 
 Validates that behavioral expectations are met
 
-Duck Typing
-===========
+## Exercise
 
----
-
-```python
-class Duck:
-  def quack(self):
-    print('quack')
-
-class House:
-  def quack(self):
-    print('quack')
-```
-
----
-
-Python container emulation
+Refactor the following code to adhere to LSP
 
 ```python
-class Example:
-    def __getitem__(self, i):
-        return i
+class Bird:
+    def fly(self):
+        pass
 
-example = Example()
-print(example[4])
-print(example[5])
+class Penguin(Bird):
+    def fly(self):
+        raise Exception("Penguins cannot fly")
 ```
 
----
+## Hint
 
-JavaScript Iterable
-
-```javascript
-let range = {
-  *[Symbol.iterator]() {
-    yield 1
-    yield 2
-    yield 3
-  }
-}
-
-for (i of range) {
-  console.log(i)
-}
-```
+- Consider creating a `FlyingBird` class
+- Inherit `Penguin` from a different base class if needed
