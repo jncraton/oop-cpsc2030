@@ -76,45 +76,83 @@ simulate_game(player)  # This works fine
 simulate_game(coach)   # This works fine
 ```
 
----
+Rectanlge Example
+-----------------
+
+```
+class Rectangle:
+    def __init__(self):
+        self._width = 1
+        self._height = 1
+
+    @property
+    def width(self):
+        return self._width
+
+    @width.setter
+    def width(self, value):
+        self._width = value
+
+    @property
+    def height(self):
+        return self._height
+
+    @height.setter
+    def height(self, value):
+        self._height = value
+    
+    @property
+    def area(self):
+        return self.width * self.height
+```
+
+Square
+------   
 
 ```python
 class Square(Rectangle):
-  ...
-  setWidth(self, w):
-    self.width = w
-  setHeight(self, h):
-    self.height = h
+    pass
 ```
 
 ---
 
 ```python
 square = Square()
-square.setWidth(5)
-square.setHeight(10)
-# Is square really a square?
+square.width = 5
+square.height = 10
+# Is Square really a square?
 ```
 
----
+Better Square?
+--------------
 
 ```python
 class Square(Rectangle):
-  ...
-  setWidth(self, w):
-    self.width = w
-    self.height = w
-  setHeight(self, h):
-    self.height = h
-    self.width = h
+    @property
+    def width(self):
+        return self._width
+    
+    @width.setter
+    def width(self, value):
+        self._width = value
+        self._height = value
+
+    @property
+    def height(self):
+        return self._height
+
+    @height.setter
+    def height(self, value):
+        self._width = value
+        self._height = value
 ```
 
 ---
 
 ```python
 square = Square()
-square.setWidth(5)
-square.setHeight(10)
+square.width = 5
+square.height = 10
 # Width and height are both 10 now
 ```
 
@@ -124,9 +162,9 @@ What about this test for rectangle?
 
 ```python
 rect = Rectangle()
-rect.setWidth(5)
-rect.setHeight(10)
-assert(rect.getArea() == 50)
+rect.width = 5
+rect.height = 10
+assert(rect.area == 50)
 ```
 
 ---
@@ -135,9 +173,9 @@ Can we replace Rectangle with Square?
 
 ```python
 rect = Square()
-rect.setWidth(5)
-rect.setHeight(10)
-assert(rect.getArea() == 50)
+rect.width = 5
+rect.height = 10
+assert(rect.area == 50)
 ```
 
 ---
