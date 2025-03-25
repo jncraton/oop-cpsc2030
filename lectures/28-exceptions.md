@@ -38,6 +38,11 @@ except TypeError as e:
     print("Type Error:", e)
 ```
 
+## Exercise
+
+- Write a function that reads a file
+- Handle `FileNotFoundError` and `IOError`
+
 ## Finally Block
 
 ```python
@@ -77,23 +82,12 @@ except CustomError as e:
     print(e)
 ```
 
-## Exercise 1
+## Exercise
 
 - Create a custom exception `NegativeNumberError`
 - Raise it if a negative number is passed to a function
 
-## Exercise 2
-
-- Write a function that reads a file
-- Handle `FileNotFoundError` and `IOError`
-
-## Exercise 3
+## Exercise
 
 - Create a custom exception `InvalidInputError`
 - Use it in a function that validates user input
-
-## Best Practices
-
-- Use specific exceptions
-- Keep handlers short
-- Document exceptions
