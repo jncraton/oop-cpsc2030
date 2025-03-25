@@ -79,7 +79,7 @@ simulate_game(coach)   # This works fine
 Rectanlge Example
 -----------------
 
-```
+```python
 class Rectangle:
     def __init__(self):
         self._width = 1
@@ -211,8 +211,3 @@ class Penguin(Bird):
     def fly(self):
         raise Exception("Penguins cannot fly")
 ```
-
-## Hint
-
-- Consider creating a `FlyingBird` class
-- Inherit `Penguin` from a different base class if needed
