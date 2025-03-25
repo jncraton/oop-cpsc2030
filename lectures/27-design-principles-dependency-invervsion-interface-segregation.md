@@ -19,7 +19,7 @@ Abstractions should not depend on details. Details should depend on abstractions
 
 ---
 
-![Naive Layering Scheme](figures/11-1.png)
+![Naive Layering Scheme](media/11-1.png)
 
 Problems
 --------
@@ -29,7 +29,7 @@ Problems
 
 ---
 
-![Inverted Layers](figures/11-2.png)
+![Inverted Layers](media/11-2.png)
 
 ---
 
@@ -55,9 +55,10 @@ QT Example
 
 ---
 
-- [https://doc.qt.io/qt-5/classes.html](https://doc.qt.io/qt-5/classes.html)
+- [https://doc.qt.io/qt-6/classes.html](https://doc.qt.io/qt-6/classes.html)
 - Explore the high-level class hierarchy of this framework.
 - Consider how the principles that we have been discussing are used in practice.
+
 Interface Segregation Principle (ISP)
 =====================================
 
