@@ -55,7 +55,7 @@ QT Example
 
 ---
 
-- [https://doc.qt.io/qt-6/classes.html](https://doc.qt.io/qt-6/classes.html)
+- [QT classes](https://doc.qt.io/qt-6/classes.html)
 - Explore the high-level class hierarchy of this framework.
 - Consider how the principles that we have been discussing are used in practice.
 
@@ -142,6 +142,8 @@ Rust Traits
 -----------
 
 > A trait is a language feature that tells the Rust compiler about functionality a type must provide.
+
+[Traits in the Rust book](https://doc.rust-lang.org/book/ch10-02-traits.html)
 
 Prototypical Inheritance
 ========================
