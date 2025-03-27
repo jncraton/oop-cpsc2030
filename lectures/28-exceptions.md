@@ -16,6 +16,12 @@
 
 - [Old Man Glitch](https://bulbapedia.bulbagarden.net/wiki/Old_man_glitch#Performing_the_glitch)
 
+---
+
+"Some people found error messages they couldn't ignore more annoying than wrong results, and, when judging the relative merits of programming languages, some still seem to equate "the ease of programming" with the ease of making undetected mistakes."
+
+Dijkstra [EWD 667](https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html)
+
 ## Raising Exceptions
 
 ```python
