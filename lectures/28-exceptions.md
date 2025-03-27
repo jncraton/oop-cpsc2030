@@ -12,6 +12,10 @@
 - Interrupt normal flow
 - Caught and handled
 
+## Unhandled Exceptional Cases
+
+- [Old Man Glitch](https://bulbapedia.bulbagarden.net/wiki/Old_man_glitch#Performing_the_glitch)
+
 ## Raising Exceptions
 
 ```python
