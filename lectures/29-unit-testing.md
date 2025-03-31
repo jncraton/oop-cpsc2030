@@ -29,6 +29,7 @@ Write a function `multiply` and test it with asserts
 
 - Part of Python standard library
 - More powerful than simple asserts
+- [Docs](https://docs.python.org/3/library/unittest.html)
 
 ## Example: unittest
 
@@ -101,9 +102,3 @@ Write a doctest for the `multiply` function
 - Mocking dependencies
 - Testing private methods
 - Edge cases and corner cases
-
-## Techniques
-
-- Use mock objects
-- Focus on public methods
-- Write comprehensive tests
