@@ -44,8 +44,8 @@ print(data)
 
 ## Exercise
 
-- Serialize a dictionary to JSON
-- Deserialize the JSON back to a dictionary
+1. Serialize a dictionary to a JSON string
+2. Deserialize the string back to a dictionary
 
 ## Pickle Serialization
 
@@ -73,15 +73,15 @@ print(pickle_data)
 ```python
 import pickle
 
-pickle_data = b'\x80\x04\x95\x1b\x00\x00\x00\x00\x00\x00\x00}\x94(N\x00\x05name\x94\x86\x05Alice\x94N\x03age\x94K\x1eN\x0bis_student\x94\x89u.'
+pickle_data = b'\x80\x04\x95*\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x04name\x94\x8c\x05Alice\x94\x8c\x03age\x94K\x1e\x8c\nis_student\x94\x89u.'
 data = pickle.loads(pickle_data)
 print(data)
 ```
 
 ## Exercise
 
-- Serialize a dictionary to pickle
-- Deserialize the pickle back to a dictionary
+1. Serialize a dictionary to pickle
+2. Deserialize the pickle back to a dictionary
 
 ## Custom Object Serialization
 
@@ -132,5 +132,6 @@ print(person.name, person.age)
 
 ## Exercise
 
-- Define a custom class with `__getstate__` and `__setstate__`
+- Define a custom DrPreston class
+- Support `__getstate__` and `__setstate__`
 - Serialize and deserialize an instance of the class
