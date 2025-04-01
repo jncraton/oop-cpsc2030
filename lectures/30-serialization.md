@@ -1,5 +1,9 @@
 # Object Serialization
 
+---
+
+![Transferring Pokemon](https://archives.bulbagarden.net/media/upload/1/17/Game_Boy_Game_Link_cable.png){height=360px}
+
 ## Introduction
 
 - Converting objects to a format that can be stored or transmitted
@@ -10,10 +14,6 @@
 - Save objects to disk
 - Send objects over a network
 - Store objects in a database
-
----
-
-![Transferring Pokemon](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Duo_gameboy.JPG/960px-Duo_gameboy.JPG)
 
 ## JSON Serialization
 
