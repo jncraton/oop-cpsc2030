@@ -48,8 +48,8 @@ print(data)
 
 ## Exercise
 
-1. Serialize a dictionary to a JSON string
-2. Deserialize the string back to a dictionary
+1. Serialize a `list` or `set` to a JSON string
+2. Deserialize to create a copy of the object
 
 ## Pickle Serialization
 
@@ -84,8 +84,8 @@ print(data)
 
 ## Exercise
 
-1. Serialize a dictionary to pickle
-2. Deserialize the pickle back to a dictionary
+1. Serialize a `list` or `set` to a pickle
+2. Deserialize to create a copy of the object
 
 ## Custom Object Serialization
 
@@ -94,7 +94,7 @@ print(data)
 ## Custom Object Example
 
 ```python
-import json
+import pickle
 
 class Person:
     def __init__(self, name, age):
@@ -109,8 +109,8 @@ class Person:
         self.age = state["age"]
 
 person = Person("Alice", 30)
-json_data = json.dumps(person.__getstate__())
-print(json_data)
+pickled_person = pickle.dumps(person)
+print(pickled_person)
 ```
 
 ## Custom Object Deserialization
@@ -136,6 +136,7 @@ print(person.name, person.age)
 
 ## Exercise
 
-- Define a custom DrPreston class
+- Create a DrPreston class that inherits from Person
+- Set a new `role` attribute to "professor"
 - Support `__getstate__` and `__setstate__`
 - Serialize and deserialize an instance of the class
