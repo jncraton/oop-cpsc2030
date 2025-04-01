@@ -11,6 +11,10 @@
 - Send objects over a network
 - Store objects in a database
 
+---
+
+![Transferring Pokemon](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Duo_gameboy.JPG/960px-Duo_gameboy.JPG)
+
 ## JSON Serialization
 
 - JavaScript Object Notation
