@@ -98,7 +98,7 @@ print("Main program continues")
 - Create a thread that prints "Hello, World" 10 times
 - Start the thread and print "Main program continues" immediately
 
-## Exercise Solution
+## Solution
 
 ```python
 import threading
