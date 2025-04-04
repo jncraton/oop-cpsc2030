@@ -112,3 +112,33 @@ thread = HelloWorldThread()
 thread.start()
 print("Main program continues")
 ```
+
+
+## Use Case: Downloading Files
+
+- Download multiple files simultaneously
+- Improve download speed and efficiency
+
+## Example
+
+```python
+import threading
+import requests
+
+def download_file(url):
+    print(f"Downloading {url}")
+    filename = url.split('/')[-1]
+    response = requests.get(url)
+    with open(filename, 'wb') as file:
+        file.write(response.content)
+
+urls = [
+    "https://jncraton.github.io/oop-cpsc2030/lectures/31-threads.html",
+    "https://jncraton.github.io/oop-cpsc2030/lectures/30-serialization.html",
+    "https://jncraton.github.io/oop-cpsc2030/lectures/29-unit-testing.html"
+]
+
+threads = [threading.Thread(target=download_file, args=(url,)) for url in urls]
+for thread in threads:
+    thread.start()
+```
