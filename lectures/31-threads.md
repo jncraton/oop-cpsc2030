@@ -98,22 +98,6 @@ print("Main program continues")
 - Create a thread that prints "Hello, World" 10 times
 - Start the thread and print "Main program continues" immediately
 
-## Solution
-
-```python
-import threading
-
-class HelloWorldThread(threading.Thread):
-    def run(self):
-        for _ in range(10):
-            print("Hello, World")
-
-thread = HelloWorldThread()
-thread.start()
-print("Main program continues")
-```
-
-
 ## Use Case: Downloading Files
 
 - Download multiple files simultaneously
