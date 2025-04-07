@@ -1,4 +1,4 @@
-# Introduction to C++23 for Python Programmers
+# C++
 
 ## Hello World
 
@@ -16,12 +16,22 @@ int main() {
 /opt/gcc-latest/bin/g++ -Wall -Werror -static -std=c++23 -fmodules -fsearch-include-path bits/std.cc {src} -o {bin}
 ```
 
+## Documentation
+
+- Ballotted final versions of the standard is under copyright and can be purchased from the ISO
+- [Drafts](https://open-std.org/JTC1/SC22/WG21/docs/papers/2021/n4885.pdf) are free
+
 ## Types
 
 - int
 - double
 - bool
 - std::string
+
+## Static Types
+
+- Variables always hold a given type of value
+- Types must be declared with variables
 
 ## Input
 
