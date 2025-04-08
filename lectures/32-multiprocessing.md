@@ -33,15 +33,10 @@ class CounterThread(threading.Thread):
             counter += 1
             print(f"Counter: {counter}")
 
-threads = [CounterThread() for _ in range(5)]
+threads = [CounterThread() for _ in range(10)]
 for thread in threads:
     thread.start()
 ```
-
-## Exercise
-
-- Create a shared list
-- Use a lock to append to the list from multiple threads
 
 ## Thread Pools
 
@@ -56,7 +51,7 @@ from concurrent.futures import ThreadPoolExecutor
 def task(n):
     return n * n
 
-with ThreadPoolExecutor() as executor:
+with ThreadPoolExecutor(max_workers=5) as executor:
     results = list(executor.map(task, range(10)))
     print(results)
 ```
@@ -70,6 +65,7 @@ with ThreadPoolExecutor() as executor:
 
 - Utilize multiple CPU cores
 - Avoid GIL (Global Interpreter Lock) limitations
+- [PEP703](https://peps.python.org/pep-0703/)
 
 ## Comparing Threads and Processes
 
@@ -132,10 +128,6 @@ if __name__ == "__main__":
     p2.join()
 ```
 
-## Exercise
-
-Create two `CounterProcess` instances and ensure they count from 1 to 20 without race conditions
-
 ## Communicating Between Processes
 
 - Use `multiprocessing.Queue` or `multiprocessing.Pipe`
@@ -177,7 +169,3 @@ if __name__ == "__main__":
     queue.put(None)
     receiver.join()
 ```
-
-## Exercise
-
-Create a `SenderProcess` and `ReceiverProcess` to send and receive a list of numbers
