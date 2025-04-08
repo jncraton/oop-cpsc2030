@@ -36,20 +36,20 @@ int main() {
 ## Input
 
 ```cpp
-#include <cstdio>
+import std;
 
 int main() {
-    int age;
-    std::printf("Enter your age: ");
-    std::scanf("%d", &age);
-    std::println("You are {} years old.", age);
+    std::string name;
+    std::print("Enter your name: ");
+    std::cin >> name;
+    std::println("Hello, {}!", name);
 }
 ```
 
 ## Printing Variables
 
 ```cpp
-#include <print>
+import std;
 
 int main() {
     int age = 23;
@@ -60,7 +60,7 @@ int main() {
 ## Conditionals
 
 ```cpp
-#include <print>
+import std;
 
 int main() {
     int age;
