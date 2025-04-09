@@ -24,6 +24,7 @@ int main() {
 ## Types
 
 - int
+- float
 - double
 - bool
 - std::string
