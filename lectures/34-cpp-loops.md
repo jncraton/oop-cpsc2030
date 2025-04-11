@@ -1,4 +1,4 @@
-# C++23 Loops
+# C++ Loops
 
 ## for Loop
 
