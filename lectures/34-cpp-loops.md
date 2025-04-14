@@ -11,7 +11,7 @@
 import std;
 
 int main() {
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < 5; i++) {
         std::println("i: {}", i);
     }
 }
@@ -35,7 +35,7 @@ int main() {
     int count = 0;
     while (count < 5) {
         std::println("count: {}", count);
-        ++count;
+        count++;
     }
 }
 ```
