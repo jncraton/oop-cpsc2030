@@ -8,4 +8,4 @@ clean:
 	rm -f input hello vars 
 	rm -f conditional while for
 	rm -f add fact greetfn 
-	rm -f point rect private-bank
+	rm -f point rect private-bank constructor
