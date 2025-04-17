@@ -9,3 +9,4 @@ clean:
 	rm -f conditional while for
 	rm -f add fact greetfn 
 	rm -f point rect private-bank constructor
+	rm -f circle list
