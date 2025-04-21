@@ -10,3 +10,4 @@ clean:
 	rm -f add fact greetfn 
 	rm -f point rect private-bank constructor
 	rm -f circle list
+	rm -f hammer
