@@ -128,7 +128,7 @@ int main() {
 - Create a derived class `Dog` that prints the name
 - Test with a `main` function
 
-## Example: Animal and Dog
+<!--
 
 ```cpp
 import std;
@@ -157,8 +157,74 @@ int main() {
 }
 ```
 
+-->
+
 ## Access Specifiers
 
 - public: Accessible from anywhere
 - private: Accessible only within the class
 - protected: Accessible within the class and derived classes
+
+## Constructor Interactions
+
+- Base constructor called first
+- Derived constructor called next
+
+## Example
+
+```cpp
+import std;
+
+class Shape {
+public:
+    Shape() {
+        std::println("Shape created");
+    }
+};
+
+class Rectangle : public Shape {
+public:
+    Rectangle() {
+        std::println("Rectangle created");
+    }
+};
+
+int main() {
+    Rectangle r;
+}
+```
+
+## Constructor with Parameters
+
+Base class constructor can take parameters
+
+## Example
+
+```cpp
+import std;
+
+class Tool {
+public:
+    Tool(int size) {
+        std::println("Tool created with size {}", size);
+    }
+};
+
+class Screwdriver : public Tool {
+public:
+    Screwdriver(int size) : Tool(size) {
+        std::println("Screwdriver created");
+    }
+};
+
+int main() {
+    Screwdriver s(3);
+}
+```
+
+
+## Exercise
+
+- Create a base class `Appliance` with a method `turn_on` that sets `is_on`
+- Create a derived class `Toaster` with a method `toast`
+- Ensure `Toaster` can call `turn_on` and `toast`
