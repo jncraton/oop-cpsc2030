@@ -10,23 +10,23 @@
 ```cpp
 import std;
 
-class Base {
+class Tool {
 public:
-    void greet() {
-        std::println("Hello from Base");
+    void use() {
+        std::println("Using a tool");
     }
 };
 
-class Derived : public Base {
+class Hammer : public Tool {
 public:
-    void greet() {
-        std::println("Hello from Derived");
+    void use() {
+        std::println("Using a hammer");
     }
 };
 
 int main() {
-    Derived d;
-    d.greet();
+    Hammer hammer;
+    hammer.use();
 }
 ```
 
@@ -35,27 +35,21 @@ int main() {
 ```cpp
 import std;
 
-class Base {
-protected:
-    int x;
+class Vehicle {
 public:
-    Base(int x) : x(x) {}
-    void print() {
-        std::println("Base x: {}", x);
-    }
+    int wheels;
 };
 
-class Derived : public Base {
+class Car : public Vehicle {
 public:
-    Derived(int x) : Base(x) {}
-    void print() {
-        std::println("Derived x: {}", x);
-    }
+    int doors;
 };
 
 int main() {
-    Derived d(10);
-    d.print();
+    Car c;
+    c.wheels = 4;
+    c.doors = 4;
+    std::println("Car has {} wheels and {} doors", c.wheels, c.doors);
 }
 ```
 
