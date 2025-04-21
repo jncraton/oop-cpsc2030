@@ -63,27 +63,29 @@ int main() {
 ```cpp
 import std;
 
-class Base {
+class Container {
 private:
-    int x;
+    int capacity;
 public:
-    Base(int x) : x(x) {}
-    void print() {
-        std::println("Base x: {}", x);
+    void set_capacity(int c) {
+        capacity = c;
+    }
+    int get_capacity() const {
+        return capacity;
     }
 };
 
-class Derived : public Base {
+class Box : public Container {
 public:
-    Derived(int x) : Base(x) {}
-    void print() {
-        // std::println("Derived x: {}", x); // Error: x is private
+    void display_capacity() {
+        std::println("Capacity: {}", get_capacity());
     }
 };
 
 int main() {
-    Derived d(10);
-    d.print();
+    Box b;
+    b.set_capacity(10);
+    b.display_capacity();
 }
 ```
 
@@ -97,27 +99,26 @@ int main() {
 ```cpp
 import std;
 
-class Base {
+class Building {
 protected:
-    int x;
+    int floors;
 public:
-    Base(int x) : x(x) {}
-    void print() {
-        std::println("Base x: {}", x);
+    void set_floors(int f) {
+        floors = f;
     }
 };
 
-class Derived : public Base {
+class House : public Building {
 public:
-    Derived(int x) : Base(x) {}
-    void print() {
-        std::println("Derived x: {}", x);
+    void display_floors() {
+        std::println("Floors: {}", floors);
     }
 };
 
 int main() {
-    Derived d(10);
-    d.print();
+    House h;
+    h.set_floors(2);
+    h.display_floors();
 }
 ```
 
@@ -155,3 +156,9 @@ int main() {
     d.print();
 }
 ```
+
+## Access Specifiers
+
+- public: Accessible from anywhere
+- private: Accessible only within the class
+- protected: Accessible within the class and derived classes
